@@ -1,2 +1,33 @@
 # Transfer-Learning
 Modelo de classificação de imagens capaz de diferenciar entre gatos e cães, utilizando técnicas de Deep Learning e Transfer Learning
+
+## Classificação de Imagens de Gatos e Cães usando Transfer Learning com VGG16
+
+### Introdução:
+
+O presente projeto tem como objetivo construir um modelo de classificação de imagens capaz de diferenciar entre gatos e cães, utilizando técnicas de Deep Learning e Transfer Learning.
+
+O objetivo final é demonstrar como Transfer Learning pode ser aplicado em problemas reais de classificação de imagens, aproveitando redes profundas pré-treinadas para reduzir tempo de treinamento e melhorar a acurácia mesmo com datasets limitados.
+
+
+### Dataset utilizado
+Para isso, foi empregado o conjunto de dados Cats vs Dogs, disponibilizado pela Microsoft e amplamente utilizado em competições de aprendizado de máquina.
+
+O dataset contém aproximadamente 25 mil imagens divididas em duas classes: “Cat” e “Dog”. Como algumas imagens apresentavam problemas de integridade ou canais não compatíveis, foi realizado um pré-processamento cuidadoso para remover imagens corrompidas e padronizar o formato das imagens para 3 canais RGB e tamanho fixo de 224x224 pixels.
+
+### Redes Neurais Utilizadas
+
+Para acelerar o treinamento e melhorar a performance, foi utilizada a rede pré-treinada VGG16, conhecida por sua robustez em tarefas de visão computacional. Apenas a camada de classificação final foi ajustada para o problema binário específico, enquanto as demais camadas permaneceram congeladas, aproveitando os pesos pré-treinados na ImageNet.
+
+
+### Particionamento e Pré-processamento
+Além disso, o projeto inclui:
+
+- Tamanho do dataset usado para treino/val/test (10% cada) para performance em CPU.
+
+- Normalização de imagens e preprocessamento compatível com VGG16
+
+- Avaliação de acurácia e perda, além de visualização de predições com probabilidades por classe
+
+### Tecnologias utilizadas
+O projeto foi desenvolvido em Python utilizando o framework TensorFlow/Keras para construção e treinamento de redes neurais. Para pré-processamento e manipulação de imagens foram empregadas bibliotecas como PIL e NumPy, enquanto Matplotlib foi utilizada para visualização de imagens e métricas de desempenho. Para avaliação de resultados, foram usadas métricas do Scikit-learn (matriz de confusão, recall, F1-score) e JSON para armazenamento dos históricos de treino. Funções padrão de OS e Random foram utilizadas para navegação em diretórios e seleção aleatória de imagens.
