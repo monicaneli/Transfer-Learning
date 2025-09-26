@@ -32,3 +32,5 @@ O projeto utilizou:
 ### Tecnologias utilizadas
 O projeto foi desenvolvido em Python utilizando o framework TensorFlow/Keras para construção e treinamento de redes neurais. Para pré-processamento e manipulação de imagens foram empregadas bibliotecas como PIL e NumPy, enquanto Matplotlib foi utilizada para visualização de imagens e métricas de desempenho. Para avaliação de resultados, foram usadas métricas do Scikit-learn (matriz de confusão, recall, F1-score) e JSON para armazenamento dos históricos de treino. Funções padrão de OS e Random foram utilizadas para navegação em diretórios e seleção aleatória de imagens.
 
+<img src="https://github.com/monicaneli/Transfer-Learning/blob/3afa246b70e4ce098476bb5965cd5446356a0021/resultado_classifica%C3%A7%C3%A3o_gatos_e_cachorros.png" />
+
