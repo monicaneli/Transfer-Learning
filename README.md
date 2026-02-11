@@ -1,7 +1,6 @@
-# Modelo de classificação de imagens usando transfer-Learning
+# Classificação de Imagens de Gatos e Cães usando Transfer Learning com VGG16
 Modelo de classificação de imagens capaz de diferenciar entre gatos e cães, utilizando técnicas de Deep Learning e Transfer Learning
 
-# Classificação de Imagens de Gatos e Cães usando Transfer Learning com VGG16
 
 ### Introdução:
 
